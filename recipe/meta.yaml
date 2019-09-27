@@ -1,5 +1,5 @@
 {% set name = "fisher" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.9" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7519d2c884be6f5844bfde900fd294e98a33fe9a943c6b03800513cd281859c3
+  sha256: d378b3f7e488e2a679c6d0e5ea1bce17bc931c2bfe8ec8424ee47a74f251968d
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [py2k and win]
   script:
     - "cythonize src/cfisher.pyx"
