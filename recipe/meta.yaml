@@ -10,7 +10,7 @@ source:
   sha256: d378b3f7e488e2a679c6d0e5ea1bce17bc931c2bfe8ec8424ee47a74f251968d
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py2k and win]
   script:
     - "cythonize src/cfisher.pyx"
@@ -34,11 +34,9 @@ test:
 
 about:
   home: http://github.com/brentp/fishers_exact_test
-  license: BSD
-  license_family: BSD
-  # Upsream issue raised, https://github.com/brentp/fishers_exact_test/issues/21
-  license_file: ''
-  summary: Fast Fisher's Exact Test
+  license_file: LICENSE
+  license: BSD-3-Clause
+  summary: Simple, fast implementation of Fisher's exact test
 
 extra:
   recipe-maintainers:
