@@ -1,4 +1,4 @@
-{% set name = "fisher" %}
+{% set name = "fishers_exact_test" %}
 {% set version = "0.1.9" %}
 
 package:
@@ -6,8 +6,8 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d378b3f7e488e2a679c6d0e5ea1bce17bc931c2bfe8ec8424ee47a74f251968d
+  url: https://github.com/brentp/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 08602004b4810d43630e2beec97b06ca11b6e2d80cc09205a67eb3fde55ad1c2
 
 build:
   number: 1
