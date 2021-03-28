@@ -11,14 +11,16 @@ source:
 
 build:
   number: 1
-  skip: True  # [py2k and win]
+  skip: True  # [py2k]
   script:
-    - "cythonize src/cfisher.pyx"
+    - "{{ PYTHON }} setup.py build_ext -j{{ CPU_COUNT }}"
     - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed"
 
 requirements:
   build:
-    - cython
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cython                                 # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
     - python
@@ -41,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - npavlovikj
+    - maxyme
