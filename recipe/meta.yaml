@@ -6,19 +6,21 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d378b3f7e488e2a679c6d0e5ea1bce17bc931c2bfe8ec8424ee47a74f251968d
+  url: https://github.com/brentp/fishers_exact_test/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 08602004b4810d43630e2beec97b06ca11b6e2d80cc09205a67eb3fde55ad1c2
 
 build:
-  number: 0
-  skip: True  # [py2k and win]
+  number: 1
+  skip: True  # [py2k]
   script:
-    - "cythonize src/cfisher.pyx"
+    - "{{ PYTHON }} setup.py build_ext -j{{ CPU_COUNT }}"
     - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed"
 
 requirements:
   build:
-    - cython
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cython                                 # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
     - python
@@ -34,12 +36,11 @@ test:
 
 about:
   home: http://github.com/brentp/fishers_exact_test
-  license: BSD
-  license_family: BSD
-  # Upsream issue raised, https://github.com/brentp/fishers_exact_test/issues/21
-  license_file: ''
-  summary: Fast Fisher's Exact Test
+  license_file: LICENSE
+  license: BSD-3-Clause
+  summary: Simple, fast implementation of Fisher's exact test
 
 extra:
   recipe-maintainers:
     - npavlovikj
+    - maxyme
