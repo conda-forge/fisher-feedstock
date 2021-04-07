@@ -10,7 +10,7 @@ source:
   sha256: 08602004b4810d43630e2beec97b06ca11b6e2d80cc09205a67eb3fde55ad1c2
 
 build:
-  number: 1
+  number: 2
   skip: True  # [py2k]
   script:
     - "{{ PYTHON }} setup.py build_ext -j{{ CPU_COUNT }}"
