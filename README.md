@@ -1,5 +1,5 @@
-About fishers_exact_test
-========================
+About fisher
+============
 
 Home: http://github.com/brentp/fishers_exact_test
 
@@ -27,45 +27,59 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_python3.6.____cpython</td>
+              <td>linux_64_numpy1.17python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2913&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=linux&configuration=linux_64_numpy1.17python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.7.____cpython</td>
+              <td>linux_64_numpy1.17python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2913&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=linux&configuration=linux_64_numpy1.17python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.8.____cpython</td>
+              <td>linux_64_numpy1.17python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2913&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=linux&configuration=linux_64_numpy1.17python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.6.____cpython</td>
+              <td>linux_64_numpy1.19python3.7.____73_pypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2913&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=linux&configuration=linux_64_numpy1.19python3.7.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.7.____cpython</td>
+              <td>osx_64_numpy1.17python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2913&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.17python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.8.____cpython</td>
+              <td>osx_64_numpy1.17python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2913&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.17python3.7.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_numpy1.17python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2913&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.17python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_numpy1.19python3.7.____73_pypy</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2913&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fisher-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.19python3.7.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -102,27 +116,27 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-fishers_exact_test-green.svg)](https://anaconda.org/conda-forge/fishers_exact_test) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fishers_exact_test.svg)](https://anaconda.org/conda-forge/fishers_exact_test) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fishers_exact_test.svg)](https://anaconda.org/conda-forge/fishers_exact_test) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fishers_exact_test.svg)](https://anaconda.org/conda-forge/fishers_exact_test) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-fisher-green.svg)](https://anaconda.org/conda-forge/fisher) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fisher.svg)](https://anaconda.org/conda-forge/fisher) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fisher.svg)](https://anaconda.org/conda-forge/fisher) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fisher.svg)](https://anaconda.org/conda-forge/fisher) |
 
-Installing fishers_exact_test
-=============================
+Installing fisher
+=================
 
-Installing `fishers_exact_test` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `fisher` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `fishers_exact_test` can be installed with:
+Once the `conda-forge` channel has been enabled, `fisher` can be installed with:
 
 ```
-conda install fishers_exact_test
+conda install fisher
 ```
 
-It is possible to list all of the versions of `fishers_exact_test` available on your platform with:
+It is possible to list all of the versions of `fisher` available on your platform with:
 
 ```
-conda search fishers_exact_test --channel conda-forge
+conda search fisher --channel conda-forge
 ```
 
 
@@ -164,17 +178,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating fishers_exact_test-feedstock
-=====================================
+Updating fisher-feedstock
+=========================
 
-If you would like to improve the fishers_exact_test recipe or build a new
+If you would like to improve the fisher recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/fishers_exact_test-feedstock are
+Note that all branches in the conda-forge/fisher-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
