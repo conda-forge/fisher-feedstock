@@ -1,20 +1,20 @@
 {% set name = "fisher" %}
-{% set version = "0.1.9" %}
+{% set version = "0.1.10" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/brentp/fishers_exact_test/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 08602004b4810d43630e2beec97b06ca11b6e2d80cc09205a67eb3fde55ad1c2
+  sha256: 5a0613c96d36a611451e375687c359b1b8b48bf037e3d3fb336088b5358abc17
 
 build:
-  number: 2
-  skip: True  # [py2k]
+  number: 0
+  skip: true  # [py2k]
   script:
-    - "{{ PYTHON }} setup.py build_ext -j{{ CPU_COUNT }}"
-    - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed"
+    - {{ PYTHON }} setup.py build_ext -j{{ CPU_COUNT }}
+    - {{ PYTHON }} -m pip install . --no-deps --ignore-installed
 
 requirements:
   build:
