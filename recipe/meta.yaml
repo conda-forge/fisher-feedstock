@@ -11,9 +11,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py2k]
   script:
-    - "{{ PYTHON }} setup.py build_ext -j{{ CPU_COUNT }}"
     - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed"
 
 requirements:
@@ -24,6 +22,7 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
+    - cython
     - numpy
     - pip
   run:
